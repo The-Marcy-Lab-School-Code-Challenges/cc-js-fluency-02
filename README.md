@@ -59,12 +59,6 @@ getNames(users) //['Reuben O.', 'Laisha C', 'Anne H.','Steph S.','Carmen S']
 getVerfiedUsers(users) 
 /* returns this array:
 const users = [
-  { name: 'Reuben O.',
-    username: '@blood_pressure_killa',
-    followers: 1,
-    verified: false,
-    bio: "It's an honor and a privilege."
-  },
   { name: 'Laisha C',
     username: '@passaic_papi',
     followers: 700,
