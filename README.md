@@ -58,7 +58,7 @@ getNames(users) //['Reuben O.', 'Laisha C', 'Anne H.','Steph S.','Carmen S']
 ```js
 getVerfiedUsers(users) 
 /* returns this array:
-const users = [
+[
   { name: 'Laisha C',
     username: '@passaic_papi',
     followers: 700,
@@ -80,32 +80,35 @@ const users = [
 lessThan1k(users) 
 
 /* returns this array:
-const users = [
-  { name: 'Laisha C',
+[
+  {
+    name: 'Reuben O.',
+    username: '@blood_pressure_killa',
+    followers: 1,
+    verified: false,
+    bio: "It's an honor and a privilege."
+  },
+  {
+    name: 'Laisha C',
     username: '@passaic_papi',
     followers: 700,
     verified: true,
-    bio: "My commute is longer than yours."
+    bio: 'My commute is longer than yours.'
   },
-  { name: 'Steph S.',
-    username: '@queen_of_the_kew',
-    followers: 1200,
+  {
+    name: 'Anne H.',
+    username: '@i_love_bambas',
+    followers: 12,
     verified: false,
-    bio: "✌🏼"
-  },
-  { name: 'Carmen S',
-    username: '@omar_apollo_fanclub',
-    followers: 1200000,
-    verified: true,
-    bio: "My favorite restaurants are outback steakhouse and buffalo wildwings. My favorite stores are Zara, H&M, and Forever 21."
-  },
+    bio: '@mayabee is my best friend'
+  }
 ]
 */
 ```
 
-4. Write a function, `searchUsername`, that takes a string and returns the user object whose `username` matches the string parameter.
+4. Write a function, `searchUsername`, that takes a string along with the array of objects and returns the user object whose `username` matches the string parameter.
 ```js
-searchUsername("@passaic_papi") 
+searchUsername(users, "@passaic_papi")
 
 /* returns this array:
 [
@@ -124,7 +127,7 @@ searchUsername("@passaic_papi")
 longWinded(users) 
 
 /* returns this array:
-const users = [
+[
   { name: 'Carmen S',
     username: '@omar_apollo_fanclub',
     followers: 1200000,
