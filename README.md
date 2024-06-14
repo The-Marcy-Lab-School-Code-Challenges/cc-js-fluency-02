@@ -49,7 +49,7 @@ const users = [
 ]
 ```
 
-1. Return an array of all of the `name`s of the users.
+1. Return an array of all that contains only the `name` property of each user.
 ```js
 getNames(users) //['Reuben O.', 'Laisha C', 'Anne H.','Steph S.','Carmen S']
 ```
